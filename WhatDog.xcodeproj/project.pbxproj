@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		69F3943F28D9001D00F9CB28 /* SeeFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeeFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69F3943F28D9001D00F9CB28 /* WhatDog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatDog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69F3944228D9001D00F9CB28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69F3944428D9001D00F9CB28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		69F3944628D9001D00F9CB28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		69F3943628D9001D00F9CB28 = {
 			isa = PBXGroup;
 			children = (
-				69F3944128D9001D00F9CB28 /* SeeFood */,
+				69F3944128D9001D00F9CB28 /* WhatDog */,
 				69F3944028D9001D00F9CB28 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,12 +50,12 @@
 		69F3944028D9001D00F9CB28 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				69F3943F28D9001D00F9CB28 /* SeeFood.app */,
+				69F3943F28D9001D00F9CB28 /* WhatDog.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		69F3944128D9001D00F9CB28 /* SeeFood */ = {
+		69F3944128D9001D00F9CB28 /* WhatDog */ = {
 			isa = PBXGroup;
 			children = (
 				69F3944228D9001D00F9CB28 /* AppDelegate.swift */,
@@ -67,15 +67,15 @@
 				69F3945628D9028A00F9CB28 /* Inceptionv3.mlmodel */,
 				69F3945028D9001E00F9CB28 /* Info.plist */,
 			);
-			path = SeeFood;
+			path = WhatDog;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		69F3943E28D9001D00F9CB28 /* SeeFood */ = {
+		69F3943E28D9001D00F9CB28 /* WhatDog */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 69F3945328D9001E00F9CB28 /* Build configuration list for PBXNativeTarget "SeeFood" */;
+			buildConfigurationList = 69F3945328D9001E00F9CB28 /* Build configuration list for PBXNativeTarget "WhatDog" */;
 			buildPhases = (
 				69F3943B28D9001D00F9CB28 /* Sources */,
 				69F3943C28D9001D00F9CB28 /* Frameworks */,
@@ -85,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = SeeFood;
+			name = WhatDog;
 			productName = SeeFood;
-			productReference = 69F3943F28D9001D00F9CB28 /* SeeFood.app */;
+			productReference = 69F3943F28D9001D00F9CB28 /* WhatDog.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -105,7 +105,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 69F3943A28D9001D00F9CB28 /* Build configuration list for PBXProject "SeeFood" */;
+			buildConfigurationList = 69F3943A28D9001D00F9CB28 /* Build configuration list for PBXProject "WhatDog" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,7 +118,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				69F3943E28D9001D00F9CB28 /* SeeFood */,
+				69F3943E28D9001D00F9CB28 /* WhatDog */,
 			);
 		};
 /* End PBXProject section */
@@ -293,7 +293,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8U2APZ3TRC;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SeeFood/Info.plist;
+				INFOPLIST_FILE = WhatDog/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Abre logo a camera";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Abre logo a galeria ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -305,7 +307,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.marlonrfjunior.SeeFood;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marlonrfjunior.WhatDog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -322,7 +324,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8U2APZ3TRC;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SeeFood/Info.plist;
+				INFOPLIST_FILE = WhatDog/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Abre logo a camera";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Abre logo a galeria ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -345,7 +349,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		69F3943A28D9001D00F9CB28 /* Build configuration list for PBXProject "SeeFood" */ = {
+		69F3943A28D9001D00F9CB28 /* Build configuration list for PBXProject "WhatDog" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				69F3945128D9001E00F9CB28 /* Debug */,
@@ -354,7 +358,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		69F3945328D9001E00F9CB28 /* Build configuration list for PBXNativeTarget "SeeFood" */ = {
+		69F3945328D9001E00F9CB28 /* Build configuration list for PBXNativeTarget "WhatDog" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				69F3945428D9001E00F9CB28 /* Debug */,
