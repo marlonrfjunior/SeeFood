@@ -8,10 +8,14 @@
 import UIKit
 import CoreML
 import Vision
+import Alamofire
+import SwiftyJSON
 
 class ViewController: UIViewController, UINavigationControllerDelegate{
 
+
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var textLabel: UILabel!
     let imagePicker = UIImagePickerController()
     
     override func viewDidLoad() {
@@ -52,7 +56,29 @@ extension ViewController {
                 fatalError("Model failed to process image")
             }
             if let firstResult = result.first {
-                self.navigationItem.title = firstResult.identifier
+               
+                let fixUrl = "https://en.wikipedia.org/w/api.php?"
+               
+                let parameters : [String : String] = [
+                    "format":"json",
+                    "action":"query",
+                    "prop":"extracts",
+                    "exintro":"",
+                    "explaintext":"",
+                    "titles": firstResult.identifier,
+                    "indexpageids":"",
+                    "redirects":"1",
+                ]
+                
+                AF.request(fixUrl, method: .get ,parameters: parameters).responseJSON { (response) in
+            
+                    let infoData : JSON = JSON(response.value)
+                        let pageid =  infoData["query"]["pageids"][0].stringValue
+                        let title = infoData["query"]["pages"][pageid]["title"].stringValue
+                        let description = infoData["query"]["pages"][pageid]["extract"].stringValue
+                    self.navigationItem.title =  title
+                    self.textLabel.text = description
+                }
             }
         }
     let handler = VNImageRequestHandler(ciImage: image)
@@ -64,3 +90,25 @@ extension ViewController {
         
     }
 }
+
+// MARK: - Info Manager Delegate methods
+extension ViewController  {
+    
+    
+}
+
+
+
+
+// MARK: - Info Manager Delegate methods
+extension ViewController  {
+    
+//    func fetchInfo ( info : String) -> InfoModel?{
+//
+//        return result
+//    }
+    
+}
+
+
+

@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--title-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WhatDog" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,22 +19,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6ov-5r-mkr">
-                                <rect key="frame" x="0.0" y="91" width="390" height="753"/>
+                                <rect key="frame" x="0.0" y="91" width="390" height="363"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="363" id="uO5-Kc-Yu1"/>
+                                </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="oQ8-G4-aJ9">
+                                <rect key="frame" x="16" y="464" width="358" height="336"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="6ov-5r-mkr" secondAttribute="bottom" id="BJo-MM-ong"/>
-                            <constraint firstItem="6ov-5r-mkr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aXy-t5-hmm"/>
-                            <constraint firstItem="6ov-5r-mkr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gdO-Fu-qFz"/>
-                            <constraint firstItem="6ov-5r-mkr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mmE-8g-Rvg"/>
+                            <constraint firstItem="oQ8-G4-aJ9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="27S-um-z4l"/>
+                            <constraint firstItem="6ov-5r-mkr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Pm2-7p-AhW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oQ8-G4-aJ9" secondAttribute="bottom" constant="10" id="SLQ-fB-HbJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oQ8-G4-aJ9" secondAttribute="trailing" constant="16" id="Zho-bZ-vIT"/>
+                            <constraint firstItem="6ov-5r-mkr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aDQ-Kh-oLs"/>
+                            <constraint firstItem="oQ8-G4-aJ9" firstAttribute="top" secondItem="6ov-5r-mkr" secondAttribute="bottom" constant="10" id="kvF-EF-gtX"/>
+                            <constraint firstItem="6ov-5r-mkr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wIz-m0-ykd"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Vv0-ig-oK7">
+                    <navigationItem key="navigationItem" title="title" largeTitleDisplayMode="always" id="Vv0-ig-oK7">
                         <barButtonItem key="rightBarButtonItem" title="Camera" style="plain" id="KlG-3C-teX">
                             <imageReference key="image" image="camera" catalog="system" symbolScale="large"/>
-                            <color key="tintColor" systemColor="linkColor"/>
+                            <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                             <connections>
                                 <action selector="CameraTapped:" destination="BYZ-38-t0r" id="7fj-IT-JT5"/>
                             </connections>
@@ -42,6 +54,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="imageView" destination="6ov-5r-mkr" id="wus-a8-ZGL"/>
+                        <outlet property="textLabel" destination="oQ8-G4-aJ9" id="yZx-UP-pI1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -53,9 +66,11 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KmT-Ah-J6O" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="oSk-TO-3lh">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.3832813605" green="0.78727882959999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -69,8 +84,8 @@
     </scenes>
     <resources>
         <image name="camera" catalog="system" width="128" height="93"/>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
