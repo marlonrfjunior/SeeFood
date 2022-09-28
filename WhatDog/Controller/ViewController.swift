@@ -11,6 +11,7 @@ import Vision
 import Alamofire
 import SwiftyJSON
 
+
 class ViewController: UIViewController, UINavigationControllerDelegate{
 
 
@@ -48,7 +49,7 @@ extension ViewController : UIImagePickerControllerDelegate {
 // MARK: - CoreML functions
 extension ViewController {
     func detect(image : CIImage){
-        guard let model = try? VNCoreMLModel(for: Inceptionv3().model) else{
+        guard let model = try? VNCoreMLModel(for: WhatDogClassifier().model) else{
             fatalError("Loading CoreML Model Failed.")
         }
         let request = VNCoreMLRequest(model: model){(request , error) in
@@ -57,7 +58,7 @@ extension ViewController {
             }
             if let firstResult = result.first {
                
-                let fixUrl = "https://en.wikipedia.org/w/api.php?"
+                let fixUrl = "https://pt.wikipedia.org/w/api.php?"
                
                 let parameters : [String : String] = [
                     "format":"json",

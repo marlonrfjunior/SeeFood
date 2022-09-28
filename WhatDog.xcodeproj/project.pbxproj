@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6911030B28E4C7E200FAFAAB /* WhatDogClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6911030A28E4C7E200FAFAAB /* WhatDogClassifier.mlmodel */; };
+		6911030E28E4CC4800FAFAAB /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 6911030D28E4CC4800FAFAAB /* SDWebImage */; };
 		693BBE8028DCF7C80072CC69 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 693BBE7F28DCF7C80072CC69 /* SwiftyJSON */; };
 		693BBE8328DCF81B0072CC69 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 693BBE8228DCF81B0072CC69 /* Alamofire */; };
 		69F3944328D9001D00F9CB28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F3944228D9001D00F9CB28 /* AppDelegate.swift */; };
@@ -15,10 +17,10 @@
 		69F3944A28D9001D00F9CB28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69F3944828D9001D00F9CB28 /* Main.storyboard */; };
 		69F3944C28D9001E00F9CB28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69F3944B28D9001E00F9CB28 /* Assets.xcassets */; };
 		69F3944F28D9001E00F9CB28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69F3944D28D9001E00F9CB28 /* LaunchScreen.storyboard */; };
-		69F3945728D9028B00F9CB28 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 69F3945628D9028A00F9CB28 /* Inceptionv3.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6911030A28E4C7E200FAFAAB /* WhatDogClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = WhatDogClassifier.mlmodel; sourceTree = "<group>"; };
 		69F3943F28D9001D00F9CB28 /* WhatDog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatDog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69F3944228D9001D00F9CB28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69F3944428D9001D00F9CB28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,7 +29,6 @@
 		69F3944B28D9001E00F9CB28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69F3944E28D9001E00F9CB28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69F3945028D9001E00F9CB28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		69F3945628D9028A00F9CB28 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6911030E28E4CC4800FAFAAB /* SDWebImage in Frameworks */,
 				693BBE8028DCF7C80072CC69 /* SwiftyJSON in Frameworks */,
 				693BBE8328DCF81B0072CC69 /* Alamofire in Frameworks */,
 			);
@@ -92,7 +94,7 @@
 				693BBE8528DCFE960072CC69 /* Controller */,
 				69F3944B28D9001E00F9CB28 /* Assets.xcassets */,
 				69F3944D28D9001E00F9CB28 /* LaunchScreen.storyboard */,
-				69F3945628D9028A00F9CB28 /* Inceptionv3.mlmodel */,
+				6911030A28E4C7E200FAFAAB /* WhatDogClassifier.mlmodel */,
 				69F3945028D9001E00F9CB28 /* Info.plist */,
 			);
 			path = WhatDog;
@@ -117,6 +119,7 @@
 			packageProductDependencies = (
 				693BBE7F28DCF7C80072CC69 /* SwiftyJSON */,
 				693BBE8228DCF81B0072CC69 /* Alamofire */,
+				6911030D28E4CC4800FAFAAB /* SDWebImage */,
 			);
 			productName = SeeFood;
 			productReference = 69F3943F28D9001D00F9CB28 /* WhatDog.app */;
@@ -149,6 +152,7 @@
 			packageReferences = (
 				693BBE7E28DCF7C80072CC69 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				693BBE8128DCF81B0072CC69 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				6911030C28E4CC4800FAFAAB /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = 69F3944028D9001D00F9CB28 /* Products */;
 			projectDirPath = "";
@@ -177,8 +181,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6911030B28E4C7E200FAFAAB /* WhatDogClassifier.mlmodel in Sources */,
 				69F3944728D9001D00F9CB28 /* ViewController.swift in Sources */,
-				69F3945728D9028B00F9CB28 /* Inceptionv3.mlmodel in Sources */,
 				69F3944328D9001D00F9CB28 /* AppDelegate.swift in Sources */,
 				69F3944528D9001D00F9CB28 /* SceneDelegate.swift in Sources */,
 			);
@@ -406,6 +410,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		6911030C28E4CC4800FAFAAB /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		693BBE7E28DCF7C80072CC69 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
@@ -425,6 +437,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		6911030D28E4CC4800FAFAAB /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6911030C28E4CC4800FAFAAB /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
 		693BBE7F28DCF7C80072CC69 /* SwiftyJSON */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 693BBE7E28DCF7C80072CC69 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
