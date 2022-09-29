@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Descubra mais sobre seu cachorro-->
+        <!--Tire uma foto do seu cachorro-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WhatDog" customModuleProvider="target" sceneMemberID="viewController">
@@ -43,7 +43,14 @@
                             <constraint firstItem="6ov-5r-mkr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="wIz-m0-ykd"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Descubra mais sobre seu cachorro" largeTitleDisplayMode="always" id="Vv0-ig-oK7">
+                    <navigationItem key="navigationItem" title="Tire uma foto do seu cachorro" largeTitleDisplayMode="always" id="Vv0-ig-oK7">
+                        <barButtonItem key="leftBarButtonItem" title="Folder" style="plain" id="Ni5-NN-hrx">
+                            <imageReference key="image" image="folder" catalog="system" symbolScale="large"/>
+                            <color key="tintColor" systemColor="opaqueSeparatorColor"/>
+                            <connections>
+                                <action selector="LibaryTapped:" destination="BYZ-38-t0r" id="cgH-Xs-PZ7"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Camera" style="plain" id="KlG-3C-teX">
                             <imageReference key="image" image="camera" catalog="system" symbolScale="large"/>
                             <color key="tintColor" systemColor="opaqueSeparatorColor"/>
@@ -84,6 +91,7 @@
     </scenes>
     <resources>
         <image name="camera" catalog="system" width="128" height="93"/>
+        <image name="folder" catalog="system" width="128" height="96"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

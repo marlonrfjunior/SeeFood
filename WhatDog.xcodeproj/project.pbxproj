@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6911030B28E4C7E200FAFAAB /* WhatDogClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6911030A28E4C7E200FAFAAB /* WhatDogClassifier.mlmodel */; };
 		6911030E28E4CC4800FAFAAB /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 6911030D28E4CC4800FAFAAB /* SDWebImage */; };
 		693BBE8028DCF7C80072CC69 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 693BBE7F28DCF7C80072CC69 /* SwiftyJSON */; };
 		693BBE8328DCF81B0072CC69 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 693BBE8228DCF81B0072CC69 /* Alamofire */; };
+		69A9F05228E5EE620067F208 /* WhatDogClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 69A9F05128E5EE620067F208 /* WhatDogClassifier.mlmodel */; };
 		69F3944328D9001D00F9CB28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F3944228D9001D00F9CB28 /* AppDelegate.swift */; };
 		69F3944528D9001D00F9CB28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F3944428D9001D00F9CB28 /* SceneDelegate.swift */; };
 		69F3944728D9001D00F9CB28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F3944628D9001D00F9CB28 /* ViewController.swift */; };
@@ -20,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6911030A28E4C7E200FAFAAB /* WhatDogClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = WhatDogClassifier.mlmodel; sourceTree = "<group>"; };
+		69A9F05128E5EE620067F208 /* WhatDogClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = WhatDogClassifier.mlmodel; sourceTree = "<group>"; };
 		69F3943F28D9001D00F9CB28 /* WhatDog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatDog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69F3944228D9001D00F9CB28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69F3944428D9001D00F9CB28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 				693BBE8528DCFE960072CC69 /* Controller */,
 				69F3944B28D9001E00F9CB28 /* Assets.xcassets */,
 				69F3944D28D9001E00F9CB28 /* LaunchScreen.storyboard */,
-				6911030A28E4C7E200FAFAAB /* WhatDogClassifier.mlmodel */,
+				69A9F05128E5EE620067F208 /* WhatDogClassifier.mlmodel */,
 				69F3945028D9001E00F9CB28 /* Info.plist */,
 			);
 			path = WhatDog;
@@ -181,7 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6911030B28E4C7E200FAFAAB /* WhatDogClassifier.mlmodel in Sources */,
+				69A9F05228E5EE620067F208 /* WhatDogClassifier.mlmodel in Sources */,
 				69F3944728D9001D00F9CB28 /* ViewController.swift in Sources */,
 				69F3944328D9001D00F9CB28 /* AppDelegate.swift in Sources */,
 				69F3944528D9001D00F9CB28 /* SceneDelegate.swift in Sources */,

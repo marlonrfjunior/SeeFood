@@ -10,6 +10,7 @@ import CoreML
 import Vision
 import Alamofire
 import SwiftyJSON
+import SDWebImage
 
 
 class ViewController: UIViewController, UINavigationControllerDelegate{
@@ -22,11 +23,17 @@ class ViewController: UIViewController, UINavigationControllerDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePicker.delegate = self
-        imagePicker.sourceType = .camera
-        imagePicker.allowsEditing = false
     }
 
+    @IBAction func LibaryTapped(_ sender: UIBarButtonItem) {
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.allowsEditing = false
+        present(imagePicker, animated: true)
+    }
+    
     @IBAction func CameraTapped(_ sender: UIBarButtonItem) {
+        imagePicker.sourceType = .camera
+        imagePicker.allowsEditing = false
         present(imagePicker, animated: true)
     }
     
@@ -63,12 +70,13 @@ extension ViewController {
                 let parameters : [String : String] = [
                     "format":"json",
                     "action":"query",
-                    "prop":"extracts",
+                    "prop":"extracts|pageimages",
                     "exintro":"",
                     "explaintext":"",
                     "titles": firstResult.identifier,
                     "indexpageids":"",
                     "redirects":"1",
+                    "pithumbsize":"500",
                 ]
                 
                 AF.request(fixUrl, method: .get ,parameters: parameters).responseJSON { (response) in
@@ -77,8 +85,10 @@ extension ViewController {
                         let pageid =  infoData["query"]["pageids"][0].stringValue
                         let title = infoData["query"]["pages"][pageid]["title"].stringValue
                         let description = infoData["query"]["pages"][pageid]["extract"].stringValue
+                    let imageURL = infoData["query"]["pages"][pageid]["thumbnail"]["source"].stringValue
                     self.navigationItem.title =  title
                     self.textLabel.text = description
+                    self.imageView.sd_setImage(with: URL(string: imageURL))
                 }
             }
         }

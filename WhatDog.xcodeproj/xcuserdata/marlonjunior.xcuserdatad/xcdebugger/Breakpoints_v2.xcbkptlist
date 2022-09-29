@@ -3,4 +3,70 @@
    uuid = "93A630C0-7231-400A-97E1-BCAE50F71BFD"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AADFAD29-2F83-4125-B271-8F64D8D7C953"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WhatDog/Controller/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "detect(image:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AADFAD29-2F83-4125-B271-8F64D8D7C953 - c966e96a22cd7c3c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.VNRequest, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in WhatDog.ViewController.detect(image: __C.CIImage) -&gt; ()"
+                  moduleName = "WhatDog"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/marlonjunior/Documents/course/development/WhatDog/WhatDog/Controller/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "1384">
+               </Location>
+               <Location
+                  uuid = "AADFAD29-2F83-4125-B271-8F64D8D7C953 - e4fe8353aad9ea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in closure #1 (__C.VNRequest, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in WhatDog.ViewController.detect(image: __C.CIImage) -&gt; ()"
+                  moduleName = "WhatDog"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/marlonjunior/Documents/course/development/WhatDog/WhatDog/Controller/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "296">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9974F455-28DC-4115-B598-5D093AB9A2E6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WhatDog/Controller/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "detect(image:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
