@@ -1,5 +1,5 @@
 # WhatDog
-In this module, I created an application to identify dog breeds through a photo. This app gets information from WikiMedia with and characteristics of the dog the photo belongs to through Machine Learnin.
+In this module, I created an app to identify dog breeds through a photo. This analysis was only possible through CoreML, where I created a model to make predictions based on new input data. With these predictions I collect information about the possible breed of the dog in the photo and present the data with a photo and description of the breed provided by WikiMedia through an HTTP request. 
 
 I could learn:
 
