@@ -334,8 +334,8 @@
 				DEVELOPMENT_TEAM = 8U2APZ3TRC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WhatDog/Info.plist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "Abre logo a camera";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Abre logo a galeria ";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera access is absolutely necessary to use this app, to take a picture of your dog.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Access to the library is absolutely necessary to use this app, to get a picture of your dog.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -365,8 +365,8 @@
 				DEVELOPMENT_TEAM = 8U2APZ3TRC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WhatDog/Info.plist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "Abre logo a camera";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Abre logo a galeria ";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera access is absolutely necessary to use this app, to take a picture of your dog.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Access to the library is absolutely necessary to use this app, to get a picture of your dog.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
